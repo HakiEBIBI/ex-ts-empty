@@ -26,6 +26,17 @@ export type User2 = {
  */
 export function returnObjects(): [User1, User2] {
   // Write your code here
+  const user1: User1 = {
+    first_name: "titi",
+    last_name: "toto",
+  };
+
+  const user2: User2 = {
+    first_name: "tata",
+    last_name: "tutu",
+  };
+
+  return [user1, user2];
 }
 
 /**
@@ -37,4 +48,12 @@ export function returnObjects(): [User1, User2] {
  */
 export type YourDetailedUser = {
   // Write your code here
+  user_name: string;
+  birth_date: Date;
+  emails: string[];
+  address: {
+    street: string;
+    city: string;
+    zip: number;
+  };
 };
